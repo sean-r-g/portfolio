@@ -13,6 +13,7 @@ header {
   color: maroon;
   background-color: gold;
   border-radius: 15px;
+  font-size: 40px;
 }
 .home {
   display: block;
@@ -34,6 +35,7 @@ nav {
   display: flex;
   flex-direction: column;
   /* justify-content: left; */
+  float: left;
 }
 li {
   list-style-type: none;
@@ -73,13 +75,42 @@ section {
   margin-right: 120px;
 }
 article {
-  background-color: maroon;
   color: white;
   margin-top: 10px;
   padding: 10px;
   border-radius: 25px;
 }
-
+.bio-section {
+  background-color: maroon;
+  margin-top: 20px;
+}
+.bio-section:hover {
+  transform: scale(1.2);
+  margin-top: 30px;
+  margin-bottom: 30px; 
+}
+/* needed to look this up: https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+.resume-entry {
+  margin-bottom: 20px;
+  background-color: maroon;
+  border-radius: 25px;
+  padding: 10px;
+}
+#prof-exp {
+  background-color: maroon;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 1px;
+}
+.resume-entry p {
+  background-color: gold;
+  color: maroon;
+  border-radius: 10px;
+  padding: 5px;
+}
+.resume-entry p:hover {
+  transform: scale(1.2);
+}
 
 
 #slides-title {
