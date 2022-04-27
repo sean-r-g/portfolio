@@ -1,19 +1,30 @@
 body {
-  background-color: beige;
+  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2016/09/30/1021583/27dc554d523ef3513f391ac1fb28ca38.jpg);
+  background-color: rgb(163, 212, 231);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
+  margin: 0;
+  height: 1350px;
 }
 header {
   position: relative;
   text-align: center;
   border-bottom: 1px solid black;
+  background-image: url(images/oriental-tiles.png);
+  background-size: contain;
+  width: 100%;
 }
 .page-title {
   display: inline-block;
   text-align: center;
-  width: 40%;
-  color: maroon;
-  background-color: gold;
+  width: 70%;
+  color: lightcyan;
+  background-color: darkcyan;
   border-radius: 15px;
   font-size: 40px;
+  box-shadow: 0px 2px 2px black;
+  text-shadow: 2px 2px 4px black;
 }
 .home {
   display: block;
@@ -22,20 +33,24 @@ header {
   top: -1px;
   font-size: 18px;
   padding: 0px;
+  box-shadow: 0px 2px 2px black;
+  background-color: transparent;
 }
 #profile {
   width: 50px;
   height: auto;
-}
-a {
-  text-decoration: none;
-  font-size: 20px;
 }
 nav {
   display: flex;
   flex-direction: column;
   /* justify-content: left; */
   float: left;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0;
+  border-radius: 5px;
 }
 li {
   list-style-type: none;
@@ -44,27 +59,9 @@ li {
   margin-top: 25px;
   margin-left: 5px;
 }
-
-footer {
-display: flex;
-position: fixed;
-bottom: 0;
-background-color: lightgray;
-width: 100%;
-left: 0;
-justify-content: center;
-}
-.social {
-  display: inline;
-  list-style-type: none;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-  align-items: center;
-}
-.social-icon {
-  width: 40px;
-  height: auto;
+nav button {
+  background-color: aquamarine;
+  border-radius: 5px;
 }
 section {
   display: flex;
@@ -81,48 +78,101 @@ article {
   border-radius: 25px;
 }
 .bio-section {
-  background-color: maroon;
+  background-color: darkcyan;
+  color: lightcyan;
   margin-top: 20px;
+  box-shadow: 0px 2px 2px black;
 }
 .bio-section:hover {
   transform: scale(1.2);
   margin-top: 30px;
   margin-bottom: 30px; 
+  box-shadow: 0px 4px 4px black;
 }
 /* needed to look this up: https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 .resume-entry {
   margin-bottom: 20px;
-  background-color: maroon;
+  background-color: darkcyan;
   border-radius: 25px;
   padding: 10px;
+  box-shadow: 0px 2px 2px black;
 }
 #prof-exp {
-  background-color: maroon;
+  background-color: darkcyan;
   border-radius: 25px;
   padding: 10px;
   margin-top: 1px;
+  box-shadow: 0px 2px 2px black;
+  text-shadow: 2px 2px 4px black;
+}
+.resume-entry h3, h4{
+  text-shadow: 2px 2px 4px black;
 }
 .resume-entry p {
-  background-color: gold;
-  color: maroon;
+  background-color: lightcyan;
+  color: rgb(9, 89, 89);
   border-radius: 10px;
   padding: 5px;
+  box-shadow: 0px 2px 2px black;
 }
 .resume-entry p:hover {
   transform: scale(1.2);
 }
+footer {
+  display: flex;
+  position: fixed;
+  background-color: lightgray;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  }
+li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}  
+.social {
+  display: inline;
+  list-style-type: none;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  align-items: center;
+  padding: 1px;  
+}
+.social-icon {
+  width: 40px;
+  height: auto;
+  box-shadow: 0px 2px 2px black;
+  padding: 1px;
+}
+#linkedin, #github {
+  padding: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#linkedin {
+  font-family: "Community";
+}
+#github {
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
 
 
+/* ---------SLIDES STYLING DO NOT TOUCH---------- */
 #slides-title {
   text-align: center;
+  color:lightcyan;
+  text-shadow: 2px 2px 4px black;
 }
 .slides-container {
 	width: 60%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
   align-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 15%;
 }
 .project-screenshots {
   align-self: center;
@@ -144,8 +194,8 @@ img {
 }
 .nextbtn .previousbtn {
 	align-self: center;
-	background-color: maroon;
-	color: gold;
+	background-color: darkcyan;
+	color: lightcyan;
 	padding: 10px;
 	border-radius: 50%;
 	text-align: center;
