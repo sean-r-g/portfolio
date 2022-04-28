@@ -130,9 +130,9 @@ li {
   padding: 1px;
 }
 #linkedin, #github {
-  padding: 10px;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 5px 3px 3px 3px;
+  /* padding-left: 3px;
+  padding-right: 3px; */
   font-size: 8px;
 }
 #linkedin {
