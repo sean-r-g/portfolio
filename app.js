@@ -27,10 +27,10 @@ $(() => {
   $('#linkedin').css('color', 'transparent')
 
   $('#li-logo').on('mouseover', () =>[
-    $('#linkedin').css('color', 'white').css('background-color', '#0072b1').css('border-radius', '10px').css('text-shadow', '2px 2px 4px black')
+    $('#linkedin').css('color', 'white').css('background-color', '#0072b1').css('border-radius', '10px').css('text-shadow', '2px 2px 4px black').css('transform', 'scale(1.5)')
   ])
   $('#gh-logo').on('mouseover', () =>[
-    $('#github').css('color', 'lightgray').css('background-color', 'black').css('border-radius', '10px').css('text-shadow', '2px 2px 4px black')
+    $('#github').css('color', 'lightgray').css('background-color', 'black').css('border-radius', '10px').css('text-shadow', '2px 2px 4px black').css('transform', 'scale(1.5)')
   ])
 
   $('#li-logo').on('mouseout', () =>[
