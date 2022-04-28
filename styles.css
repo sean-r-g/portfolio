@@ -46,7 +46,7 @@ header {
   border-radius: 20px;
 }
 .home:hover {
-  box-shadow: 3px 3px 3px 3px #105762;
+  box-shadow: 2px 2px 2px 2px #105762;
 }
 #profile {
   width: 50px;
@@ -77,10 +77,10 @@ li {
 }
 nav button {
   background-color: #105762;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 nav button:hover {
-  box-shadow: 2px 2px 2px 2px #FF6B53;
+  box-shadow: 2px 2px 2px 0px white;
 }
 nav a {
   color: #F3E2BD;
@@ -311,7 +311,7 @@ img {
   font-size: 20px;
 }
 .nextbtn:hover, .previousbtn:hover {
-  box-shadow: 2px 2px 2px 2px #F3E2BD;
+  box-shadow: 2px 2px 2px 2px #105762;
 }
 img:first-of-type {
 	display: block;
@@ -321,7 +321,7 @@ img:first-of-type {
 /* Time to make it mobile friendly! */
 /* iPhone-focused responsive design, referenced https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ for measurements */
 
-@media only screen and (max-device-width: 812px) {
+@media only screen and (max-device-width: 814px) {
     body {
     height: auto;
   }
@@ -329,8 +329,11 @@ img:first-of-type {
     font-size: 26px;
     margin-top: 50px;
   }
-  .home {
+  /* .home {
     margin-top: 35px;
+  } */
+  #sgport-text {
+    color: transparent
   }
   nav {
     flex-direction: row;
