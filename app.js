@@ -1,3 +1,17 @@
+//Meal Generator Consts/Arrays//
+const genre = ['Southern', 'East Asian', 'Mexican', 'Italian', 'Mediterranean']
+const flavorProfile = ['spicy', 'savory', 'sweet', 'umami']
+const protein = ['chicken', 'tofu', 'chickpeas', 'beef', 'pork', 'shrimp', 'white fish', 'salmon']
+const veggies = ['snap peas', 'tomato', 'baby bok choy', 'broccoli', 'green beans', 'cuccumber', 'greens', 'kale', 'carrots', 'bell pepper', 'jalapeno', 'yellow onion', 'shallot', 'red onion']
+const side = [' baked potato', 'rice', 'couscous', 'pita', 'crusty bread', 'french fries', 'sweet potato']
+
+const randomize = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    return array[Math.floor(Math.random() * array.length)]
+  }
+}
+
+///Base website JS + jQuery
 $(() => {
   let currentImgIndex = 0
   let numOfImages = $('.project-screenshots').children().length - 1
