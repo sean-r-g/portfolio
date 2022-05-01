@@ -252,6 +252,24 @@ tr, td {
   text-decoration: underline;
   font-size: 16px;
 }
+/* Meal Generator styling */
+.meal-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+#randomize {
+  margin-left: auto;
+  margin-right: auto;
+}
+#meal-ideas {
+  text-align: center;
+  color: #105762;
+  font-size: 24px;
+}
+
+
 
 /* ---------SLIDES STYLING DO NOT TOUCH---------- */
 #slides-title {

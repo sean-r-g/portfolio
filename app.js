@@ -10,6 +10,10 @@ const randomize = (array) => {
     return array[Math.floor(Math.random() * array.length)]
   }
 }
+const randomizeAll = () => {
+  $('#meal-ideas').empty()
+  $('#meal-ideas').text(`${randomize(flavorProfile)}, ${randomize(protein)}, ${randomize(veggies)}, ${randomize(veggies)}, ${randomize(side)}`)
+}
 
 ///Base website JS + jQuery
 $(() => {
@@ -53,6 +57,9 @@ $(() => {
   $('#gh-logo').on('mouseout', () =>[
     $('#github').css('color', 'transparent').css('background-color', 'transparent').css('text-shadow', 'none')
   ])
-  
+  ///Meal Generator////
+  // $('.meal-div').append($('<p>').text(randomizeAll()))
+  $('#randomize').on('click', randomizeAll)
+
 });
 
