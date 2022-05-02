@@ -134,12 +134,7 @@ li {
   /* padding-left: 3px;
   padding-right: 3px; */
   font-size: 8px;
-}
-#linkedin {
-  font-family: "Community";
-}
-#github {
-  font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: 'Pacifico', cursive;
 }
 
 /* Bio Styling */
@@ -167,8 +162,25 @@ li {
 .bio-article:hover {
   transform: scale(1.1);
   margin-top: 30px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   box-shadow: 0px 4px 4px 4px #FF6B53;
+}
+.bio-article li {
+  list-style:circle
+}
+.bio-article li a {
+  font-family: "Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
+  color: #F2CFB8;
+  text-decoration: underline;
+  font-size: 16px;
+}
+#comp-img {
+  margin-top: 50px;
+}
+#cooking-img {
+  border-radius: 30px;
+  border: 1px transparent;
+  margin-top: 50px;
 }
 /* needed to look this up: https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 
@@ -379,6 +391,12 @@ img:first-of-type {
     flex-direction: row;
     float: none;
     justify-content: center;
+  }
+  .nav {
+    margin-left: 5px;
+  }
+  a {
+    font-size: 12px;
   }
   #slides-title {
     font-size: 22px;
