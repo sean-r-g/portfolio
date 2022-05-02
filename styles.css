@@ -262,11 +262,33 @@ tr, td {
 #randomize {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10%;
+}
+.meal-div {
+  margin-left: auto;
+  margin-right: auto;
 }
 #meal-ideas {
   text-align: center;
   color: #105762;
   font-size: 24px;
+  padding: 5px;
+  background-color: #f2cfb8;
+  /* border: solid 1px #105762; */
+  border-radius: 15px;
+}
+#randomize {
+  background-color: #105762;
+  color: #f2cfb8;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 28px;
+  padding: 3px;
+  border-radius: 5px;
+  font-family: 'Pacifico', cursive;
+}
+#randomize:hover {
+  box-shadow: 2px 2px 2px 0px white;
 }
 
 

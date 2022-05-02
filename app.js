@@ -1,9 +1,9 @@
 //Meal Generator Consts/Arrays//
 const genre = ['Southern', 'East Asian', 'Mexican', 'Italian', 'Mediterranean']
-const flavorProfile = ['spicy', 'savory', 'sweet', 'umami']
+const flavorProfile = ['spicy', 'fried', 'saucy', 'umami', 'savory', 'breaded']
 const protein = ['chicken', 'tofu', 'chickpeas', 'beef', 'pork', 'shrimp', 'white fish', 'salmon']
 const veggies = ['snap peas', 'tomato', 'baby bok choy', 'broccoli', 'green beans', 'cuccumber', 'greens', 'kale', 'carrots', 'bell pepper', 'jalapeno', 'yellow onion', 'shallot', 'red onion']
-const side = [' baked potato', 'rice', 'couscous', 'pita', 'crusty bread', 'french fries', 'sweet potato']
+const side = ['potato', 'rice', 'couscous', 'pita', 'bread', 'sweet potato', 'orzo', 'pasta/noodles']
 
 const randomize = (array) => {
   for (let i = 0; i < array.length; i++) {
@@ -12,6 +12,7 @@ const randomize = (array) => {
 }
 const randomizeAll = () => {
   $('#meal-ideas').empty()
+  $('#meal-ideas').css('border', 'solid 1px #105762').css('box-shadow', '2px 2px 2px #105762')
   $('#meal-ideas').text(`${randomize(flavorProfile)}, ${randomize(protein)}, ${randomize(veggies)}, ${randomize(veggies)}, ${randomize(side)}`)
 }
 
