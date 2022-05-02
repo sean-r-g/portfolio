@@ -1,5 +1,5 @@
 //Meal Generator Consts/Arrays//
-const genre = ['Southern', 'East Asian', 'Mexican', 'Italian', 'Mediterranean']
+// const genre = ['Southern', 'East Asian', 'Mexican', 'Italian', 'Mediterranean']
 const flavorProfile = ['spicy', 'fried', 'saucy', 'umami', 'savory', 'breaded']
 const protein = ['chicken', 'tofu', 'chickpeas', 'beef', 'pork', 'shrimp', 'white fish', 'salmon']
 const veggies = ['snap peas', 'tomato', 'baby bok choy', 'broccoli', 'green beans', 'cuccumber', 'greens', 'kale', 'carrots', 'bell pepper', 'jalapeno', 'yellow onion', 'shallot', 'red onion']
@@ -11,12 +11,38 @@ const randomize = (array) => {
   }
 }
 const randomizeAll = () => {
-  $('#meal-ideas').empty()
-  $('#meal-ideas').css('border', 'solid 1px #105762').css('box-shadow', '2px 2px 2px #105762')
-  $('#meal-ideas').text(`${randomize(flavorProfile)}, ${randomize(protein)}, ${randomize(veggies)}, ${randomize(veggies)}, ${randomize(side)}`)
+  $('.meal-div').css('border', 'solid 1px #105762').css('box-shadow', '2px 2px 2px #105762')
+  $('#flavorProfile').text(`Flavor Profile/Style: ${randomize(flavorProfile)}`)
+  $('#protein').text(`Protein: ${randomize(protein)}`)
+  $('#veggies').text(`Veggies: ${randomize(veggies)}, ${randomize(veggies)}`)
+  $('#extra-veg').text(`Extra Veggie: ${randomize(veggies)}`)
+  $('#side').text(`Side: ${randomize(side)}`)
+  $('#try-again').css('display', 'block')
+  $('#redo-buttons').css('display', 'block')
+  $('#add-veg').css('display', 'block')
+}
+const redoRandomizeFP = () => {
+  $('#flavorProfile').empty()
+  $('#flavorProfile').text(`Flavor Profile: ${randomize(flavorProfile)}`)
+}
+const redoRandomizeProtein = () => {
+  $('#protein').empty()
+  $('#protein').text(`Protein: ${randomize(protein)}`)
+}
+const redoRandomizeVeg = () => {
+  $('#veggies').empty()
+  $('#veggies').text(`Veggies: ${randomize(veggies)}, ${randomize(veggies)}`)
+}
+const redoRandomizeSide = () => {
+  $('#side').empty()
+  $('#side').text(`Side: ${randomize(side)}`)
+}
+const extraVeg = () => {
+  $('#extra-veg').css('display', 'block')
+  $('#extra-veg').text(`Extra Veggie: ${randomize(veggies)}`)
 }
 
-///Base website JS + jQuery
+///On load and Base website JS + jQuery
 $(() => {
   let currentImgIndex = 0
   let numOfImages = $('.project-screenshots').children().length - 1
@@ -59,8 +85,11 @@ $(() => {
     $('#github').css('color', 'transparent').css('background-color', 'transparent').css('text-shadow', 'none')
   ])
   ///Meal Generator////
-  // $('.meal-div').append($('<p>').text(randomizeAll()))
   $('#randomize').on('click', randomizeAll)
-
+  $('#fp-redo').on('click', redoRandomizeFP)
+  $('#prot-redo').on('click', redoRandomizeProtein)
+  $('#veg-redo').on('click', redoRandomizeVeg)
+  $('#side-redo').on('click', redoRandomizeSide)
+  $('#more-veg').on('click', extraVeg)
 });
 

@@ -271,25 +271,24 @@ tr, td {
   align-content: center;
   flex-direction: column;
 }
-#randomize {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-}
 .meal-div {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-#meal-ideas {
+#flavorProfile, #protein, #veggies, #side, #extra-veg {
   text-align: center;
   color: #105762;
   font-size: 24px;
   padding: 5px;
   background-color: #f2cfb8;
-  /* border: solid 1px #105762; */
   border-radius: 15px;
 }
 #randomize {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
   background-color: #105762;
   color: #f2cfb8;
   border-radius: 15px;
@@ -299,8 +298,39 @@ tr, td {
   border-radius: 5px;
   font-family: 'Pacifico', cursive;
 }
-#randomize:hover {
-  box-shadow: 2px 2px 2px 0px white;
+#redo-buttons {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#try-again, #add-veg {
+  display: none;
+  text-align: center;
+  color: #105762;
+  font-size: 24px;
+  padding: 5px;
+  background-color: #f2cfb8;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#try-again {
+  border: solid 1px #105762;
+  box-shadow: 2px 2px 2px #105762;
+}
+#fp-redo, #prot-redo, #veg-redo, #side-redo, #more-veg {
+  background-color: #105762;
+  color: #f2cfb8;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 3px;
+  font-family: 'Pacifico', cursive;
+  margin-right: 5px;
+}
+#extra-veg {
+  display: none;
 }
 
 
